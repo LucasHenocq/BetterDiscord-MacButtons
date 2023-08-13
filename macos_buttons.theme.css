@@ -1,0 +1,56 @@
+/**
+ * @name Macos Buttons
+ * @author belzebuth.
+ * @version 1.0.0
+ * @description MacOs Buttons
+
+*/
+
+:root{
+	--button-top: 2px;
+	--button-size: 12px;
+}
+/* Set height */
+.withFrame-2dL45i {
+	height: 20px;
+}
+/* Erase svgs */
+.typeWindows-2-g3UY .winButton-3UMjdg > svg {
+	display: none;
+}
+/* Button Spacing */
+.typeWindows-2-g3UY .winButton-3UMjdg {
+	top: var(--button-top);
+	width: var(--button-size);
+	height: var(--button-size);
+	margin: var(--margin-top) var(--button-size) 0px 0px;
+	border-radius: 12px;
+}
+/* Buttons */
+.typeWindows-2-g3UY .winButton-3UMjdg::after {
+	content: '';
+	height: var(--button-size);
+	width: var(--button-size);
+	border-radius: 100%;
+}
+/* Colors */
+.typeWindows-2-g3UY .winButtonClose-3Q8ZH5::after {
+	background-color: hsl(0, 50%, 50%);
+	transition-duration: 0.5s
+}
+.typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(3)::after {
+	background-color: hsl(120, 50%, 50%);
+	transition-duration: 0.5s;
+}
+.typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(4)::after {
+	background-color: hsl(50, 50%, 50%);
+	transition-duration: 0.5s
+}
+/* Hover */
+.typeWindows-2-g3UY > div:hover::after {
+	transition-duration: 0.5s;
+	transform: scale(1.1);
+}
+.typeWindows-2-g3UY > div:active::after {
+	transform: scale(1);
+}
